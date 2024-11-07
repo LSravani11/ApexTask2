@@ -1,0 +1,252 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background: linear-gradient(to right, #f9f3e1, #fce3c7); /* Soft pastel gradient */
+  color: #4b4b4b; /* Dark grey text for readability */
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #6a4c6c; /* Background color for header */
+  padding: 20px;
+}
+
+.title {
+  font-size: 2.5em; /* Large font size for title */
+  color: #f3f1f3; /* Light cream */
+  margin: 0;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px; /* Space between each link */
+}
+
+.nav-links li a {
+  color: #f3f1f3; /* Light cream */
+  text-decoration: none;
+  font-size: 1.2em; /* Smaller font size for nav links */
+  font-weight: bold;
+}
+
+.nav-links li a:hover {
+  color: #f2a900; /* Soft yellow on hover */
+  transition: color 0.3s ease;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title {
+    margin-bottom: 10px;
+  }
+}
+
+.hero {
+  background: linear-gradient(to right,#f7e2e1, #f7e2e1); /* Soft pastel pink-blue gradient */
+  text-align: center;
+  padding: 80px 20px;
+  color:black;
+  border-bottom: 5px solid #f7d1c1; /* Light peach border */
+}
+
+.hero h2 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 1.5em;
+  font-weight: 300;
+  margin-top: 10px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding:20px;
+  margin: 0 auto;
+}
+
+.fashion-card {
+  background: #f4e1d2; /* Light beige background */
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fashion-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.fashion-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.fashion-card img:hover {
+  transform: scale(1.1);
+}
+
+.fashion-card p {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #6a4c6c; /* Soft lavender purple text */
+}
+
+#todo {
+  background: #f7e2e1; /* Soft pastel pink */
+  padding: 50px 20px;
+  color: #4b4b4b; /* Dark grey text */
+}
+
+#todo h2 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+}
+
+.todo-container {
+  text-align: center;
+}
+
+#todoInput {
+  padding: 12px;
+  width: 300px;
+  font-size: 1em;
+  border-radius: 5px;
+  border: 1px solid #f7d1c1; /* Soft peach border */
+  margin-bottom: 10px;
+}
+
+#addTodo {
+  background-color: #f7d1c1; /* Soft peach */
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: 1em;
+}
+
+#addTodo:hover {
+  background-color: #f2a900; /* Soft yellow */
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+#todoList {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+#todoList li {
+  background-color: #fff; /* White background */
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2em;
+  border: 1px solid #f7d1c1; /* Soft peach border */
+}
+
+#todoList li.completed {
+  text-decoration: line-through;
+  background-color: #f2f2f2; /* Light grey for completed tasks */
+}
+
+#todoList li button {
+  background-color: #f7d1c1; /* Soft peach */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#todoList li button:hover {
+  background-color: #f2a900; /* Soft yellow */
+}
+
+/* Contact Form Section */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+form label {
+  font-size: 1.1em;
+  color: #6a4c6c; /* Soft lavender purple */
+  font-weight: bold;
+}
+
+form input, form textarea {
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #f7d1c1; /* Soft peach border */
+  font-size: 1em;
+}
+
+form button {
+  background-color: #f7d1c1; /* Soft peach */
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #f2a900; /* Soft yellow */
+}
+
+footer {
+  background-color: #6a4c6c; /* Soft lavender purple */
+  color: #f3f1f3; /* Light cream */
+  text-align: center;
+  padding: 15px 20px;
+}
+
+footer p {
+  font-size: 1.2em;
+}
+
+@media (max-width: 768px) {
+  header {
+    text-align: center;
+  }
+
+  nav ul {
+    float: none;
+    text-align: center;
+  }
+}

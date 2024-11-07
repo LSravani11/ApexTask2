@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cookie Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <div class="header-container">
+      <h1 class="title" style="margin-left: 20px;">Fashion Collection</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#todo">Styles</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <h2>New Amazing Stuff is here!</h2>
+    <p>Browse for our new collection </p>
+  </section>
+
+  <!-- fashion Gallery Section -->
+  <section id="gallery">
+    <h2 style="margin-left: 20px;">Our Collections</h2>
+    <div class="gallery-grid">
+      <div class="fashion-card">
+        <img src="https://www.fashionfoody.com/wp-content/uploads/2018/03/Ethnic-jackets-with-denim.jpg" alt="Chocolate Chip Cookie">
+        <p>Womens Ethnic/Western</p>
+      </div>
+      <div class="fashion-card">
+        <img src="https://cdn0.weddingwire.in/article/1367/original/1280/jpg/37631-indo-western-for-men-outfits-manyavar-mohey-wedding-sherwani.jpeg" alt="Oatmeal Raisin Cookie">
+        <p>Mens Ethnic/western</p>
+      </div>
+      <div class="fashion-card">
+        <img src="https://i.pinimg.com/474x/33/08/26/3308262c8ae7612316250b1019d49fa6.jpg" alt="Peanut Butter Cookie">
+        <p>Kidswere</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dynamic To-Do List Section -->
+  <section id="todo">
+    <h2>Choose Best Style for you</h2>
+    <div class="todo-container">
+      <input type="text" id="todoInput" placeholder="Add a new task..." />
+      <button id="addTodo">Add Task</button>
+      <ul id="todoList"></ul>
+    </div>
+  </section>
+  <!-- Contact Form Section -->
+  <section id="contact">
+    <h2 style="margin-left: 20px;">Contact Us</h2>
+    <form id="contactForm">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 Trendy Collection | All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
